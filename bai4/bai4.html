@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Nhập vào dãy số:");
+        let num= input.split(" ");
+        let maxNumber= -1;
+        for ( let i=0;i<num.length;i++){
+            let number =parseInt(num[i]);
+            if(!isNaN(number)&&number>maxNumber){
+                maxNumber=number;
+            }
+        }
+        if(maxNumber===-1){
+            alert("Day so khong hop le  ");
+
+        }else{
+            alert(`${maxNumber} la so lon nhat trong day`);
+        }
+
+    </script>
+</body>
+
+</html>

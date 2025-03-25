@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Nhap vao cac so ");
+        let number=input.split(",");
+        let schan = 0 ;
+        let sle = 0 ;
+        for ( let i=0;i<number.length;i++){
+            let num = parseInt(number[i]);
+            if( !isNaN(num)){
+                if ( num % 2 ===0){ 
+                    schan += num;
+                }else{ 
+                    sle += num;
+                }
+            }
+        }
+        alert(`tong cac so chan: ${schan} tong cac so le ${sle}`);
+    </script>
+</body>
+</html>
